@@ -94,7 +94,7 @@ li::marker {
 table {
   text-align: left;
   width: 100%;
-
+  border-collapse: collapse;
   border-spacing: 1.5rem;
 }
 
@@ -105,6 +105,9 @@ th {
 td {
   color: var(--clr-brown-800);
   font-weight: 700;
+}
+table tr:not(:last-child) {
+  border-bottom: 1px solid var(--clr-stone-150);
 }
 
 @media screen and (max-width: 600px) {
